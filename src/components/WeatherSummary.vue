@@ -20,32 +20,32 @@
 @import "../assets/styles/main"
 
 .pic-main
-    width: 60px
-    height: 60px
-    margin: 20px 0 12px
-    background-repeat: no-repeat
-    background-position: 50% 50%
-    background-size: contain
+  width: 60px
+  height: 60px
+  margin: 20px 0 12px
+  background-repeat: no-repeat
+  background-position: 50% 50%
+  background-size: contain
 
 .city
-    font-size: 24px
+  font-size: 24px
 
 .weather
-    margin: 0 0 20px
-    padding: 20px 0
-    border-bottom: 1px solid rgba(255, 255, 255, 0.4)
+  margin: 0 0 20px
+  padding: 20px 0
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4)
 
 .temp
-    padding-bottom: 8px
-    font-size: 32px
+  padding-bottom: 8px
+  font-size: 32px
 
 .text-block
-    position: relative
-    padding-left: 24px
-    padding-bottom: 8px
-    font-size: 14px
+  position: relative
+  padding-left: 24px
+  padding-bottom: 8px
+  font-size: 14px
 
-.text-block::before
+  &::before
     content: ''
     position: absolute
     top: 0
@@ -58,17 +58,18 @@
     background-size: contain
 
 .weather-desc
-    &::before
-        background-image: url('/src/assets/img/weather.svg')
+
+  &::before
+    background-image: url('/src/assets/img/weather.svg')
 
 .city
 
-    &::before
-        background-image: url('/src/assets/img/location.svg')
+  &::before
+    background-image: url('/src/assets/img/location.svg')
 
 .date
 
-&::before
+  &::before
     left: 2px
     width: 15px
     height: 15px

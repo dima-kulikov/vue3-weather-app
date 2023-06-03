@@ -116,56 +116,56 @@
 @import "../assets/styles/main.sass"
 
 .highlights
-    padding: 28px 16px 16px
-    background: url('/src/assets/img/gradient-4.jpg') no-repeat 0% 0%
-    background-size: cover
-    border-radius: 25px
+  padding: 28px 16px 16px
+  background: url('/src/assets/img/gradient-4.jpg') no-repeat 0% 0%
+  background-size: cover
+  border-radius: 25px
 
-&-wrapper
+  &-wrapper
     display: flex
     justify-content: space-between
 
     @media (max-width: 575px)
-        flex-direction: column
+      flex-direction: column
 
 .title
-    padding-bottom: 16px
+  padding-bottom: 16px
 
 .highlight
-    width: 32%
+  width: 32%
 
-@media (max-width: 575px)
+  @media (max-width: 575px)
     width: 100%
     margin-bottom: 16px
 
 .card
-    min-height: 230px
-    padding: 16px
-    background: url('/src/assets/img/gradient-2.jpg') no-repeat 50% 50%
-    background-size: cover
-    border-radius: 8px
+  min-height: 230px
+  padding: 16px
+  background: url('/src/assets/img/gradient-2.jpg') no-repeat 50% 50%
+  background-size: cover
+  border-radius: 8px
 
-@media (max-width: 1199px)
+  @media (max-width: 1199px)
     padding: 12px
 
-&-centered
+  &-centered
     display: flex
     justify-content: center
     margin-top: 40px
 
-&-justify
+  &-justify
     display: flex
     justify-content: space-between
     margin-top: 40px
 
-&-title
+  &-title
     padding-bottom: 12px
     font-size: 13px
 
     @media (max-width: 1199px)
-        font-size: 12px
+      font-size: 12px
 
-&-pic
+  &-pic
     width: 100%
     height: 90px
     margin-bottom: 16px
@@ -174,28 +174,28 @@
     background-size: contain
 
     &--wind
-        background-image: url('/src/assets/img/equalizer (2).png')
+      background-image: url('/src/assets/img/equalizer (2).png')
 
     &--pressure
-        background-image: url('/src/assets/img/barometer.png')
+      background-image: url('/src/assets/img/barometer.png')
 
     &--sun
-        background-image: url('/src/assets/img/sun-moving.png')
+      background-image: url('/src/assets/img/sun-moving.png')
 
 .states
-    display: flex
-    justify-content: space-between
+  display: flex
+  justify-content: space-between
 
-&--margin
+  &--margin
     margin-top: 40px
 
 .state
-    width: 40%
+  width: 40%
 
-&:last-child
+  &:last-child
     text-align: right
 
-&-pic
+  &-pic
     width: 20px
     height: 20px
     margin-bottom: 6px
@@ -203,64 +203,64 @@
     background-size: cover
 
     &--flipped
-        margin-left: auto
-        -webkit-transform: scaleX(-1)
-        transform: scaleX(-1)
+      margin-left: auto
+      -webkit-transform: scaleX(-1)
+      transform: scaleX(-1)
 
-&-title
+  &-title
     font-size: 12px
     color: $gold
 
-&-time
+  &-time
     font-size: 13px
     font-weight: 700
 
     @media (max-width: 1199px)
-        font-size: 11px
+      font-size: 11px
 
 .info-main
-    display: flex
-    align-items: flex-end
+  display: flex
+  align-items: flex-end
 
-&:last-child
+  &:last-child
     text-align: right
 
-&-num
+  &-num
     font-size: 20px
 
     @media (max-width: 1199px)
-        font-size: 18px
+      font-size: 18px
 
-&-text
+  &-text
     padding-left: 2px
     padding-bottom: 3px
     font-size: 13px
     color: rgba($white, 0.75)
 
     @media (max-width: 1199px)
-        padding-bottom: 1.5px
-        font-size: 12px
+      padding-bottom: 1.5px
+      font-size: 12px
 
 .card-small
-    margin-top: 12px
-    padding: 12px 16px
-    background: url('/src/assets/img/gradient-2.jpg') no-repeat 50% 50%
-    background-size: cover
-    border-radius: 8px
+  margin-top: 12px
+  padding: 12px 16px
+  background: url('/src/assets/img/gradient-2.jpg') no-repeat 50% 50%
+  background-size: cover
+  border-radius: 8px
 
-&-title
+  &-title
     font-size: 13px
 
-&-info
+  &-info
     display: flex
     justify-content: space-between
     align-items: center
 
     @media (max-width: 1199px)
-        flex-direction: column
-        align-items: flex-start
+      flex-direction: column
+      align-items: flex-start
 
-&-pic
+  &-pic
     width: 20px
     height: 20px
     background-repeat: no-repeat
@@ -268,43 +268,43 @@
     background-size: contain
 
     @media (max-width: 1199px)
-        display: none
+      display: none
 
     &--margin
-        width: 16px
-        height: 16px
-        margin-bottom: 3px
+      width: 16px
+      height: 16px
+      margin-bottom: 3px
 
     &--wind
-        background-image: url('/src/assets/img/gusts.svg')
+      background-image: url('/src/assets/img/gusts.svg')
 
     &--pressure
-        background-image: url('/src/assets/img/humidity.svg')
+      background-image: url('/src/assets/img/humidity.svg')
 
     &--sun
-        background-image: url('/src/assets/img/cloud.svg')
+      background-image: url('/src/assets/img/cloud.svg')
 
-&-data
+  &-data
     display: flex
     align-items: flex-end
     width: 45%
 
     @media (max-width: 1199px)
-        width: 100%
-        padding-top: 8px
+      width: 100%
+      padding-top: 8px
 
-&-hint
+  &-hint
     width: 55%
 
     @media (max-width: 1199px)
-        width: 100%
+      width: 100%
 
-&-text
+  &-text
     font-size: 11px
     line-height: 1.2
     color: rgba($white, 0.6)
 
     @media (max-width: 1199px)
-        min-height: 22px
-        font-size: 9px
+      min-height: 22px
+      font-size: 9px
 </style>
