@@ -2,7 +2,7 @@
 import Highlights from "./components/Highlights.vue";
 import WeatherSummary from "./components/WeatherSummary.vue";
 </script>
-
+// https://www.youtube.com/watch?v=7ZMcIlZB85E&t=144s
 <template>
   <div class="page">
     <main class="main">
