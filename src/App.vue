@@ -1,8 +1,21 @@
 <script setup>
+import { ref } from "vue";
+import { API_KEY, BASE_URL } from "./constants/index";
 import Highlights from "./components/Highlights.vue";
 import WeatherSummary from "./components/WeatherSummary.vue";
+
+const city = ref("paris");
+const weatherInfo = ref(null);
+
+function getWeaher() {
+  fetch(`${BASE_URL}?q=${city.value}&appid=${API_KEY}`)
+    .then((response) => response.json())
+    .then((data) => (weatherInfo.value = data));
+  console.log(weatherInfo);
+}
+getWeaher();
 </script>
-// https://www.youtube.com/watch?v=7ZMcIlZB85E&t=144s
+// https://www.youtube.com/watch?v=7ZMcIlZB85E&t=144s   32*18
 <template>
   <div class="page">
     <main class="main">
@@ -12,7 +25,8 @@ import WeatherSummary from "./components/WeatherSummary.vue";
             <section class="section section-left">
               <div class="info">
                 <div class="city-inner">
-                  <input type="text" class="search" />
+                  {{ city }}
+                  <input v-model="city" type="text" class="search" />
                 </div>
                 <WeatherSummary />
               </div>
