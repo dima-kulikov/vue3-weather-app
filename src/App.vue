@@ -30,7 +30,6 @@ onMounted(getWeaher);
             >
               <div class="info">
                 <div class="city-inner">
-                  {{ city }}
                   <input
                     v-model="city"
                     type="text"
